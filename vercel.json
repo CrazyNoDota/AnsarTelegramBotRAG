@@ -5,7 +5,8 @@
       "src": "api/webhook.py",
       "use": "@vercel/python",
       "config": {
-        "includeFiles": "data/**"
+        "includeFiles": "data/**",
+        "maxDuration": 60
       }
     }
   ],

@@ -89,13 +89,13 @@ def _call_nvidia(messages: list[dict], api_key: str) -> str:
         json={
             "model": NVIDIA_MODEL,
             "messages": messages,
-            "max_tokens": 1024,
+            "max_tokens": 512,
             "temperature": 0.2,
             "top_p": 0.9,
             "stream": False,
             "chat_template_kwargs": {"enable_thinking": False},
         },
-        timeout=30,
+        timeout=8,
     )
     resp.raise_for_status()
     body = resp.json()
@@ -108,7 +108,7 @@ def _call_openai(messages: list[dict], api_key: str) -> str:
         model=OPENAI_FALLBACK_MODEL,
         messages=messages,
         temperature=0.2,
-        max_tokens=1024,
+        max_tokens=512,
     )
     return (resp.choices[0].message.content or "").strip()
 
