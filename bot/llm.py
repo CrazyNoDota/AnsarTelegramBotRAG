@@ -129,10 +129,14 @@ def answer(question: str, hits: list[Retrieved]) -> str:
         try:
             return _call_nvidia(messages, nvidia_key)
         except Exception as exc:  # noqa: BLE001 — we want to fall back on anything
-            print(f"[llm] NVIDIA call failed, falling back to OpenAI: {exc}")
+            print(f"[llm] NVIDIA call failed ({type(exc).__name__}: {exc}), falling back to OpenAI")
 
     if openai_key:
-        return _call_openai(messages, openai_key)
+        try:
+            return _call_openai(messages, openai_key)
+        except Exception as exc:
+            print(f"[llm] OpenAI call failed ({type(exc).__name__}: {exc})")
+            raise
 
     raise RuntimeError(
         "No LLM credentials available. Set NVIDIA_API_KEY and/or OPENAI_API_KEY."
