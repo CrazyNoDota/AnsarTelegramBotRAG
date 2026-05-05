@@ -80,9 +80,10 @@ def _call_nvidia(messages: list[dict], api_key: str) -> str:
             "model": NVIDIA_MODEL,
             "messages": messages,
             "max_tokens": 1024,
-            "temperature": 0.2,  # low — we want grounded, not creative
+            "temperature": 0.2,
             "top_p": 0.9,
             "stream": False,
+            "chat_template_kwargs": {"enable_thinking": False},
         },
         timeout=30,
     )
