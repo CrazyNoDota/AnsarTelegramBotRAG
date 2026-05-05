@@ -16,20 +16,20 @@ from bot.llm import answer
 _STATIC: dict[str, dict[str, str]] = {
     "en": {
         "welcome": (
-            "Welcome! I'm your Pakistan funding advisor.\n\n"
-            "I help organizations, startups, universities, and students in Pakistan "
+            "Welcome! I'm your funding advisor.\n\n"
+            "I help organizations, startups, universities, and students "
             "find grants and funding opportunities. We have {n} programs in our database!\n\n"
             "Tell me about yourself:\n"
             "• Are you an individual (student / researcher) or an institution?\n"
             "• What sector or field are you in?\n"
             "• Or just ask — for example:\n"
-            '  "What grants are available for tech startups in Pakistan?"\n'
+            '  "What grants are available for tech startups?"\n'
             '  "Are there research grants for engineering students?"\n'
             '  "Which programs have deadlines coming up soon?"\n\n'
             "Write in any language — I'll always reply in English."
         ),
         "help": (
-            "I'm your Pakistan funding advisor.\n\n"
+            "I'm your funding advisor.\n\n"
             "Tell me about your goals — individual or institution, sector, "
             "funding amount — and I'll match you with the best programs from our database.\n\n"
             "I can help you:\n"
@@ -57,20 +57,20 @@ _STATIC: dict[str, dict[str, str]] = {
     },
     "ru": {
         "welcome": (
-            "Добро пожаловать! Я твой консультант по финансированию в Пакистане.\n\n"
-            "Я помогаю организациям, стартапам, университетам и студентам в Пакистане "
+            "Добро пожаловать! Я твой консультант по финансированию.\n\n"
+            "Я помогаю организациям, стартапам, университетам и студентам "
             "находить гранты и возможности финансирования. В нашей базе {n} программ!\n\n"
             "Расскажи о себе:\n"
             "• Ты физическое лицо (студент / исследователь) или организация?\n"
             "• В какой сфере или области работаешь?\n"
             "• Или просто задай вопрос — например:\n"
-            '  «Какие гранты есть для технологических стартапов в Пакистане?»\n'
+            '  «Какие гранты есть для технологических стартапов?»\n'
             '  «Есть ли исследовательские гранты для студентов-инженеров?»\n'
             '  «Какие программы заканчиваются в ближайшее время?»\n\n'
             "Пиши на любом языке — я всегда отвечу на русском."
         ),
         "help": (
-            "Я твой консультант по финансированию в Пакистане.\n\n"
+            "Я твой консультант по финансированию.\n\n"
             "Расскажи о своих целях — физическое лицо или организация, сфера, "
             "объём финансирования — и я подберу лучшие программы из нашей базы данных.\n\n"
             "Я помогу:\n"
