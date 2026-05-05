@@ -8,9 +8,18 @@
         "includeFiles": "data/**",
         "maxDuration": 60
       }
+    },
+    {
+      "src": "api/webhook_ru.py",
+      "use": "@vercel/python",
+      "config": {
+        "includeFiles": "data/**",
+        "maxDuration": 60
+      }
     }
   ],
   "routes": [
+    { "src": "/api/webhook_ru", "dest": "api/webhook_ru.py" },
     { "src": "/api/webhook", "dest": "api/webhook.py" },
     { "src": "/", "dest": "api/webhook.py" }
   ]

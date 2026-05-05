@@ -1,12 +1,11 @@
-"""LLM client with Qwen-on-NVIDIA primary and OpenAI fallback.
+"""LLM client — NVIDIA NIM primary, OpenAI fallback.
 
-The system prompt is the main hallucination control: it explicitly tells
-the model that the only allowed source of facts is the CONTEXT block, and
-that anything not present must be answered with a fixed refusal phrase.
+Two language modes:
+  "en" — always respond in English; translate any Russian/other context.
+  "ru" — always respond in Russian; translate any English/other context.
 
-Language handling: we don't ask the model to translate or guess — we
-detect Cyrillic in the user's question and tell the model which language
-to reply in. This keeps the system simple and predictable.
+The system prompt is the main behavior controller: topic restriction,
+fact grounding, language lock, and conversation style.
 """
 from __future__ import annotations
 
@@ -19,54 +18,95 @@ from openai import OpenAI
 from bot.rag import Retrieved
 
 
-# NVIDIA NIM hosts a number of OpenAI-compatible models. The exact model id
-# can change — keep this configurable via env so we can swap without a code
-# push if NVIDIA renames or retires it.
-NVIDIA_BASE_URL = os.environ.get(
-    "NVIDIA_BASE_URL", "https://integrate.api.nvidia.com/v1"
-)
+NVIDIA_BASE_URL = os.environ.get("NVIDIA_BASE_URL", "https://integrate.api.nvidia.com/v1")
 NVIDIA_MODEL = os.environ.get("NVIDIA_MODEL", "qwen/qwen3-235b-a22b")
 OPENAI_FALLBACK_MODEL = os.environ.get("OPENAI_FALLBACK_MODEL", "gpt-4o-mini")
 
-REFUSAL_RU = (
-    "Отличный вопрос! Я специализируюсь на поступлении в университет и стипендиях. "
-    "Расскажи подробнее — какую страну или специальность рассматриваешь? "
-    "Вместе найдём подходящую программу!"
-)
-REFUSAL_EN = (
-    "Great question! I'm specialized in university applications and scholarships. "
-    "Tell me more — what country or field of study are you considering? "
-    "Let's find the right program for you together!"
-)
+_REFUSALS = {
+    "en": (
+        "Great question! I help organizations, startups, universities, and students in Pakistan "
+        "find grants and funding opportunities. Tell me more — are you an individual or an institution? "
+        "What sector or field are you in? Let's find the right funding for you!"
+    ),
+    "ru": (
+        "Отличный вопрос! Я помогаю организациям, стартапам, университетам и студентам в Пакистане "
+        "находить гранты и возможности финансирования. Расскажи подробнее — ты физическое лицо "
+        "или организация? В какой сфере работаешь? Давай найдём подходящий грант!"
+    ),
+}
 
+_SYSTEM_EN = """\
+You are an enthusiastic and knowledgeable funding advisor helping organizations, startups, \
+universities, and students in Pakistan find grants and funding opportunities.
 
-SYSTEM_PROMPT_TEMPLATE = """You are an enthusiastic and friendly university admissions advisor working for our company. Your job is to help users find the right scholarship or grant program and guide them toward applying with our company's support.
+You help users:
+• Search and identify relevant grants and funding programs
+• Understand which programs they are eligible to apply for
+• Track application deadlines and requirements
+• Navigate the application process step by step
+• Find both institution-level funding (universities, organizations, startups) \
+and individual-level funding (students, researchers)
 
 STRICT RULES:
-1. TOPIC RESTRICTION: You only discuss university applications, scholarships, grants for study, and related admissions topics. If the user asks about something unrelated, warmly redirect them: "I'm your university application guide! Ask me about scholarships, programs, or how to apply."
-2. FACTS ONLY FROM CONTEXT: Specific details about programs (amounts, deadlines, eligibility, country) must come ONLY from the CONTEXT block below. Never invent details not present in CONTEXT.
-3. WHEN CONTEXT LACKS THE ANSWER: Don't refuse coldly. Instead:
-   - Ask a clarifying question (e.g. "What country are you targeting?" / "What's your field of study?")
-   - Or say: "{refusal}"
-4. CONVERSATION STYLE: Be lively, warm, and encouraging. Use natural language. Ask follow-up questions to understand the user's goals. Show genuine interest. Celebrate their ambitions!
-   NEVER start your reply with "Hello", "Hi", "Hey", "Great to meet you", or any greeting — the user already knows who you are. Jump straight into the answer or question.
-5. BE CONCISE: Pick the most relevant programs from CONTEXT — don't dump everything. If listing programs, keep it to 3-5 with key highlights.
-6. LANGUAGE: Reply in the same language the user used. Russian question → Russian reply. English question → English reply.
+1. TOPIC: You only discuss grants, funding, scholarships, and related application topics \
+for Pakistan-based applicants. For anything off-topic, warmly redirect: \
+"I'm your Pakistan funding advisor! Ask me about grants, funding programs, or how to apply."
+2. LANGUAGE: Always respond in English — even if the user writes in another language. \
+If retrieved context contains Russian or other languages, translate it to English in your reply.
+3. FACTS FROM CONTEXT ONLY: Specific details (amounts, deadlines, eligibility criteria, \
+countries) must come ONLY from the CONTEXT block below. Never invent or assume details.
+4. WHEN CONTEXT LACKS THE ANSWER: Don't refuse coldly. Ask a clarifying question instead — \
+e.g., "Are you an individual or an institution?", "What sector are you in?", \
+"What funding amount are you looking for?", "What is your field of study?"
+5. STYLE: Be warm, professional, and encouraging. Ask follow-up questions to understand \
+the user's profile and goals. Show genuine interest in helping them succeed. \
+NEVER start with "Hello", "Hi", "Hey", or any greeting — jump straight into the answer.
+6. CONCISE: Pick the most relevant programs from CONTEXT — 3 to 5 with key highlights. \
+Don't dump everything.
 
-CONTEXT (scholarship and grant programs in our database):
+CONTEXT (funding programs in our database):
 ---
 {context}
 ---
 """
 
+_SYSTEM_RU = """\
+Ты энергичный и опытный консультант по финансированию, который помогает организациям, \
+стартапам, университетам и студентам в Пакистане находить гранты и возможности финансирования.
 
-def _is_cyrillic(text: str) -> bool:
-    """Cheap language detector — 'is there Cyrillic?'.
+Ты помогаешь пользователям:
+• Искать и находить актуальные гранты и программы финансирования
+• Понять, на какие программы они могут претендовать
+• Отслеживать сроки подачи заявок и требования
+• Пройти через процесс подачи заявки шаг за шагом
+• Найти финансирование как для организаций (университеты, НКО, стартапы), \
+так и для физических лиц (студенты, исследователи)
 
-    Good enough for ru/en routing. Replace with langdetect if more languages
-    show up later.
-    """
-    return any("Ѐ" <= ch <= "ӿ" for ch in text)
+СТРОГИЕ ПРАВИЛА:
+1. ТЕМА: Ты обсуждаешь только гранты, финансирование, стипендии и связанные с этим темы \
+для заявителей из Пакистана. Если тема другая — тепло перенаправь: \
+«Я твой консультант по финансированию для Пакистана! Спроси меня о грантах или о том, как подать заявку.»
+2. ЯЗЫК: Всегда отвечай на русском языке — даже если пользователь пишет на другом языке. \
+Если в контексте есть английский или другой язык — переводи на русский в своём ответе.
+3. ТОЛЬКО ФАКТЫ ИЗ КОНТЕКСТА: Конкретные детали (суммы, сроки, критерии отбора, страны) \
+должны браться ТОЛЬКО из блока КОНТЕКСТ ниже. Никогда не придумывай и не предполагай детали.
+4. ЕСЛИ КОНТЕКСТ НЕ СОДЕРЖИТ ОТВЕТА: Не отказывай холодно. Задай уточняющий вопрос — \
+например, «Вы физическое лицо или организация?», «В какой сфере работаете?», \
+«Какой объём финансирования вам нужен?», «Какая у вас специальность?»
+5. СТИЛЬ: Будь тёплым, профессиональным и воодушевляющим. Задавай уточняющие вопросы, \
+чтобы понять профиль и цели пользователя. Проявляй искренний интерес в том, чтобы помочь. \
+НИКОГДА не начинай с «Привет», «Здравствуйте» или любого другого приветствия — \
+сразу переходи к ответу или вопросу.
+6. КРАТКО: Выбирай наиболее релевантные программы из КОНТЕКСТА — 3–5 с ключевыми \
+особенностями. Не перечисляй всё подряд.
+
+КОНТЕКСТ (программы финансирования в нашей базе данных):
+---
+{context}
+---
+"""
+
+_SYSTEM_PROMPTS = {"en": _SYSTEM_EN, "ru": _SYSTEM_RU}
 
 
 def _build_context_block(hits: Iterable[Retrieved]) -> str:
@@ -78,7 +118,6 @@ def _build_context_block(hits: Iterable[Retrieved]) -> str:
 
 
 def _call_nvidia(messages: list[dict], api_key: str) -> str:
-    """Call NVIDIA's OpenAI-compatible endpoint. Raises on non-2xx."""
     resp = requests.post(
         f"{NVIDIA_BASE_URL}/chat/completions",
         headers={
@@ -113,21 +152,19 @@ def _call_openai(messages: list[dict], api_key: str) -> str:
     return (resp.choices[0].message.content or "").strip()
 
 
-def answer(question: str, hits: list[Retrieved]) -> str:
-    """Generate a grounded answer to `question` using the retrieved hits.
+def answer(question: str, hits: list[Retrieved], language: str = "en") -> str:
+    """Generate a grounded answer using retrieved hits.
 
-    Tries NVIDIA Qwen first (free tier); on any error falls back to OpenAI.
-    Both keys can be present — the fallback is silent. If neither is set,
-    raises so the bot can surface a configuration problem.
+    language: "en" (English bot) or "ru" (Russian bot).
+    Tries NVIDIA first, falls back to OpenAI on any error.
     """
-    refusal = REFUSAL_RU if _is_cyrillic(question) else REFUSAL_EN
+    lang = language if language in _SYSTEM_PROMPTS else "en"
+    refusal = _REFUSALS[lang]
+
     if not hits:
         return refusal
 
-    system_prompt = SYSTEM_PROMPT_TEMPLATE.format(
-        refusal=refusal,
-        context=_build_context_block(hits),
-    )
+    system_prompt = _SYSTEM_PROMPTS[lang].format(context=_build_context_block(hits))
     messages = [
         {"role": "system", "content": system_prompt},
         {"role": "user", "content": question},
@@ -139,7 +176,7 @@ def answer(question: str, hits: list[Retrieved]) -> str:
     if nvidia_key:
         try:
             return _call_nvidia(messages, nvidia_key)
-        except Exception as exc:  # noqa: BLE001 — we want to fall back on anything
+        except Exception as exc:  # noqa: BLE001
             print(f"[llm] NVIDIA call failed ({type(exc).__name__}: {exc}), falling back to OpenAI")
 
     if openai_key:
@@ -149,6 +186,4 @@ def answer(question: str, hits: list[Retrieved]) -> str:
             print(f"[llm] OpenAI call failed ({type(exc).__name__}: {exc})")
             raise
 
-    raise RuntimeError(
-        "No LLM credentials available. Set NVIDIA_API_KEY and/or OPENAI_API_KEY."
-    )
+    raise RuntimeError("No LLM credentials available. Set NVIDIA_API_KEY and/or OPENAI_API_KEY.")
