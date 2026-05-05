@@ -1,0 +1,12 @@
+.env
+.env.local
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+.vercel/
+.DS_Store
+.idea/
+.vscode/
+.claude/

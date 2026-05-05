@@ -1,0 +1,762 @@
+[
+  {
+    "row_id": 1,
+    "text": "Грант №1: EIC Pathfinder Open 2026\nТип: R&D Grant\nОрганизация: European Innovation Council\nСфера: AI, новые материалы, кванты, биотех\nСтрана: Евросоюз\nДедлайн: 2026-05-06\nСумма: до €4 млн\nДоступность: Только для местных (EU+ассоциированные)\nМесто реализации: Страна-участник EU\nКлючевые требования: TRL 1-4, междисциплинарность\nСайт: https://eic.ec.europa.eu/eic-pathfinder-open\nСтатус: Красный (СРОЧНО)",
+    "grant": {
+      "row_id": 1,
+      "name": "EIC Pathfinder Open 2026",
+      "type": "R&D Grant",
+      "organization": "European Innovation Council",
+      "field": "AI, новые материалы, кванты, биотех",
+      "country": "Евросоюз",
+      "deadline": "2026-05-06",
+      "amount": "до €4 млн",
+      "availability": "Только для местных (EU+ассоциированные)",
+      "location": "Страна-участник EU",
+      "requirements": "TRL 1-4, междисциплинарность",
+      "website": "https://eic.ec.europa.eu/eic-pathfinder-open",
+      "status": "Красный (СРОЧНО)"
+    }
+  },
+  {
+    "row_id": 2,
+    "text": "Грант №2: EIC Accelerator 2026\nТип: Инвестиции + Грант\nОрганизация: EIC\nСфера: Deep-tech (TRL 5+)\nСтрана: Евросоюз\nДедлайн: 2026-05-06\nСумма: до €2.5 млн + инвестиции\nДоступность: Только для местных (EU+ассоциированные)\nМесто реализации: Страна-участник EU\nКлючевые требования: Инновация, сильная бизнес-модель\nСайт: https://eic.ec.europa.eu/eic-accelerator\nСтатус: Красный (СРОЧНО)",
+    "grant": {
+      "row_id": 2,
+      "name": "EIC Accelerator 2026",
+      "type": "Инвестиции + Грант",
+      "organization": "EIC",
+      "field": "Deep-tech (TRL 5+)",
+      "country": "Евросоюз",
+      "deadline": "2026-05-06",
+      "amount": "до €2.5 млн + инвестиции",
+      "availability": "Только для местных (EU+ассоциированные)",
+      "location": "Страна-участник EU",
+      "requirements": "Инновация, сильная бизнес-модель",
+      "website": "https://eic.ec.europa.eu/eic-accelerator",
+      "status": "Красный (СРОЧНО)"
+    }
+  },
+  {
+    "row_id": 3,
+    "text": "Грант №3: NASA SBIR Phase I\nТип: R&D Grant\nОрганизация: NASA\nСфера: Биотехнологии для космоса\nСтрана: США\nДедлайн: 2026-05-21\nСумма: $150,000\nДоступность: Только для местных (малый бизнес США)\nМесто реализации: Территория США\nКлючевые требования: Технологии для космоса и Земли\nСайт: https://sbir.nasa.gov/\nСтатус: Жёлтый",
+    "grant": {
+      "row_id": 3,
+      "name": "NASA SBIR Phase I",
+      "type": "R&D Grant",
+      "organization": "NASA",
+      "field": "Биотехнологии для космоса",
+      "country": "США",
+      "deadline": "2026-05-21",
+      "amount": "$150,000",
+      "availability": "Только для местных (малый бизнес США)",
+      "location": "Территория США",
+      "requirements": "Технологии для космоса и Земли",
+      "website": "https://sbir.nasa.gov/",
+      "status": "Жёлтый"
+    }
+  },
+  {
+    "row_id": 4,
+    "text": "Грант №4: NCInnovation Pre-application\nТип: R&D Grant\nОрганизация: NCInnovation\nСфера: Биотех, AI, инженерия, агротех\nСтрана: США (Сев. Каролина)\nДедлайн: 2026-05-13\nСумма: Уточняется\nДоступность: Только для местных (NC, США)\nМесто реализации: Сев. Каролина, США\nКлючевые требования: Партнерство с университетом NC\nСайт: https://www.ncinnovation.org/\nСтатус: Жёлтый",
+    "grant": {
+      "row_id": 4,
+      "name": "NCInnovation Pre-application",
+      "type": "R&D Grant",
+      "organization": "NCInnovation",
+      "field": "Биотех, AI, инженерия, агротех",
+      "country": "США (Сев. Каролина)",
+      "deadline": "2026-05-13",
+      "amount": "Уточняется",
+      "availability": "Только для местных (NC, США)",
+      "location": "Сев. Каролина, США",
+      "requirements": "Партнерство с университетом NC",
+      "website": "https://www.ncinnovation.org/",
+      "status": "Жёлтый"
+    }
+  },
+  {
+    "row_id": 5,
+    "text": "Грант №5: AWS Imagine Grant 2026\nТип: Грант для НКО\nОрганизация: AWS\nСфера: AI, облачные технологии\nСтрана: Глобально\nДедлайн: 2026-06-05\nСумма: $200,000 + $100,000 AWS кредитов\nДоступность: Международный (любая страна)\nМесто реализации: Глобально\nКлючевые требования: Проект с AI для социальных решений\nСайт: https://aws.amazon.com/grants/\nСтатус: Жёлтый",
+    "grant": {
+      "row_id": 5,
+      "name": "AWS Imagine Grant 2026",
+      "type": "Грант для НКО",
+      "organization": "AWS",
+      "field": "AI, облачные технологии",
+      "country": "Глобально",
+      "deadline": "2026-06-05",
+      "amount": "$200,000 + $100,000 AWS кредитов",
+      "availability": "Международный (любая страна)",
+      "location": "Глобально",
+      "requirements": "Проект с AI для социальных решений",
+      "website": "https://aws.amazon.com/grants/",
+      "status": "Жёлтый"
+    }
+  },
+  {
+    "row_id": 6,
+    "text": "Грант №6: NSF / NIH SBIR/STTR Phase I\nТип: R&D Grant\nОрганизация: NSF/NIH\nСфера: Биомедицина, IT, инженерия\nСтрана: США\nДедлайн: 2026-09-05\nСумма: $275,000-$305,000\nДоступность: Только для местных (малый бизнес США)\nМесто реализации: Территория США\nКлючевые требования: Коммерческий потенциал\nСайт: https://seedfund.nsf.gov/\nСтатус: Зелёный",
+    "grant": {
+      "row_id": 6,
+      "name": "NSF / NIH SBIR/STTR Phase I",
+      "type": "R&D Grant",
+      "organization": "NSF/NIH",
+      "field": "Биомедицина, IT, инженерия",
+      "country": "США",
+      "deadline": "2026-09-05",
+      "amount": "$275,000-$305,000",
+      "availability": "Только для местных (малый бизнес США)",
+      "location": "Территория США",
+      "requirements": "Коммерческий потенциал",
+      "website": "https://seedfund.nsf.gov/",
+      "status": "Зелёный"
+    }
+  },
+  {
+    "row_id": 7,
+    "text": "Грант №7: Horizon Europe: Smart Cities Mission\nТип: R&D Grant\nОрганизация: EU Horizon Europe\nСфера: Умные города, энергоэффективность\nСтрана: Евросоюз\nДедлайн: 2026-10-08\nСумма: €85.5 млн (бюджет)\nДоступность: Только для местных (EU+ассоциированные)\nМесто реализации: Страна-участник EU\nКлючевые требования: Решения для устойчивости городов\nСайт: https://cinea.ec.europa.eu/\nСтатус: Зелёный",
+    "grant": {
+      "row_id": 7,
+      "name": "Horizon Europe: Smart Cities Mission",
+      "type": "R&D Grant",
+      "organization": "EU Horizon Europe",
+      "field": "Умные города, энергоэффективность",
+      "country": "Евросоюз",
+      "deadline": "2026-10-08",
+      "amount": "€85.5 млн (бюджет)",
+      "availability": "Только для местных (EU+ассоциированные)",
+      "location": "Страна-участник EU",
+      "requirements": "Решения для устойчивости городов",
+      "website": "https://cinea.ec.europa.eu/",
+      "status": "Зелёный"
+    }
+  },
+  {
+    "row_id": 8,
+    "text": "Грант №8: Horizon Europe: AI for Agriculture\nТип: R&D Grant\nОрганизация: EU Horizon Europe\nСфера: AI в сельском хозяйстве\nСтрана: Евросоюз\nДедлайн: 2026-11-26\nСумма: €23 млн (бюджет)\nДоступность: Только для местных (EU+ассоциированные)\nМесто реализации: Страна-участник EU\nКлючевые требования: AI-решения для FoodTech\nСайт: https://rea.ec.europa.eu/\nСтатус: Зелёный",
+    "grant": {
+      "row_id": 8,
+      "name": "Horizon Europe: AI for Agriculture",
+      "type": "R&D Grant",
+      "organization": "EU Horizon Europe",
+      "field": "AI в сельском хозяйстве",
+      "country": "Евросоюз",
+      "deadline": "2026-11-26",
+      "amount": "€23 млн (бюджет)",
+      "availability": "Только для местных (EU+ассоциированные)",
+      "location": "Страна-участник EU",
+      "requirements": "AI-решения для FoodTech",
+      "website": "https://rea.ec.europa.eu/",
+      "status": "Зелёный"
+    }
+  },
+  {
+    "row_id": 9,
+    "text": "Грант №9: First Ventures (September Cycle)\nТип: Грант для стартапов студентов\nОрганизация: Gebert Rüf Stiftung\nСфера: Любая инновационная бизнес-идея\nСтрана: Швейцария\nДедлайн: 2026-09-01\nСумма: до CHF 150,000 (~$165,000)\nДоступность: Только для местных (швейцарские вузы)\nМесто реализации: Швейцария\nКлючевые требования: Студенты/выпускники UAS (до 6 мес)\nСайт: https://bioalps.org/first-ventures/\nСтатус: Зелёный",
+    "grant": {
+      "row_id": 9,
+      "name": "First Ventures (September Cycle)",
+      "type": "Грант для стартапов студентов",
+      "organization": "Gebert Rüf Stiftung",
+      "field": "Любая инновационная бизнес-идея",
+      "country": "Швейцария",
+      "deadline": "2026-09-01",
+      "amount": "до CHF 150,000 (~$165,000)",
+      "availability": "Только для местных (швейцарские вузы)",
+      "location": "Швейцария",
+      "requirements": "Студенты/выпускники UAS (до 6 мес)",
+      "website": "https://bioalps.org/first-ventures/",
+      "status": "Зелёный"
+    }
+  },
+  {
+    "row_id": 10,
+    "text": "Грант №10: Terra Alpha by Brinc\nТип: Акселератор\nОрганизация: Brinc\nСфера: Climate Tech\nСтрана: Глобально\nДедлайн: 2026-05-15\nСумма: Уточняется\nДоступность: Международный (любая страна)\nМесто реализации: Онлайн + демо-день (Гонконг)\nКлючевые требования: Климатические технологии\nСайт: https://www.brinc.io/\nСтатус: Красный (СРОЧНО)",
+    "grant": {
+      "row_id": 10,
+      "name": "Terra Alpha by Brinc",
+      "type": "Акселератор",
+      "organization": "Brinc",
+      "field": "Climate Tech",
+      "country": "Глобально",
+      "deadline": "2026-05-15",
+      "amount": "Уточняется",
+      "availability": "Международный (любая страна)",
+      "location": "Онлайн + демо-день (Гонконг)",
+      "requirements": "Климатические технологии",
+      "website": "https://www.brinc.io/",
+      "status": "Красный (СРОЧНО)"
+    }
+  },
+  {
+    "row_id": 11,
+    "text": "Грант №11: Axilor Venture Launchpad\nТип: Акселератор\nОрганизация: Axilor\nСфера: HealthTech, FinTech, SaaS\nСтрана: Индия\nДедлайн: 2026-05-31\nСумма: $50,000+ инвестиции\nДоступность: Международный (любая страна)\nМесто реализации: Бангалор, Индия\nКлючевые требования: Ранние стартапы\nСайт: https://axilor.com/\nСтатус: Жёлтый",
+    "grant": {
+      "row_id": 11,
+      "name": "Axilor Venture Launchpad",
+      "type": "Акселератор",
+      "organization": "Axilor",
+      "field": "HealthTech, FinTech, SaaS",
+      "country": "Индия",
+      "deadline": "2026-05-31",
+      "amount": "$50,000+ инвестиции",
+      "availability": "Международный (любая страна)",
+      "location": "Бангалор, Индия",
+      "requirements": "Ранние стартапы",
+      "website": "https://axilor.com/",
+      "status": "Жёлтый"
+    }
+  },
+  {
+    "row_id": 12,
+    "text": "Грант №12: Village Capital Sustainability\nТип: Акселератор\nОрганизация: Village Capital\nСфера: AgriTech, Климатические технологии\nСтрана: Глобально\nДедлайн: 2026-05-29\nСумма: Обучение + $50,000 грант\nДоступность: Международный (любая страна)\nМесто реализации: Онлайн\nКлючевые требования: Социальное воздействие\nСайт: https://vilcap.com/\nСтатус: Жёлтый",
+    "grant": {
+      "row_id": 12,
+      "name": "Village Capital Sustainability",
+      "type": "Акселератор",
+      "organization": "Village Capital",
+      "field": "AgriTech, Климатические технологии",
+      "country": "Глобально",
+      "deadline": "2026-05-29",
+      "amount": "Обучение + $50,000 грант",
+      "availability": "Международный (любая страна)",
+      "location": "Онлайн",
+      "requirements": "Социальное воздействие",
+      "website": "https://vilcap.com/",
+      "status": "Жёлтый"
+    }
+  },
+  {
+    "row_id": 13,
+    "text": "Грант №13: AWS GovTech Accelerator\nТип: Акселератор\nОрганизация: AWS\nСфера: GovTech, AI для госуслуг\nСтрана: США (Global)\nДедлайн: 2026-06-01\nСумма: $50,000 + AWS кредиты\nДоступность: Международный (любая страна)\nМесто реализации: США (демо-день) или онлайн\nКлючевые требования: Стартапы для государственных услуг\nСайт: https://aws.amazon.com/govtech/\nСтатус: Жёлтый",
+    "grant": {
+      "row_id": 13,
+      "name": "AWS GovTech Accelerator",
+      "type": "Акселератор",
+      "organization": "AWS",
+      "field": "GovTech, AI для госуслуг",
+      "country": "США (Global)",
+      "deadline": "2026-06-01",
+      "amount": "$50,000 + AWS кредиты",
+      "availability": "Международный (любая страна)",
+      "location": "США (демо-день) или онлайн",
+      "requirements": "Стартапы для государственных услуг",
+      "website": "https://aws.amazon.com/govtech/",
+      "status": "Жёлтый"
+    }
+  },
+  {
+    "row_id": 14,
+    "text": "Грант №14: Katapult Ocean\nТип: Акселератор\nОрганизация: Katapult\nСфера: BlueTech, Ocean Tech\nСтрана: Глобально\nДедлайн: 2026-06-01\nСумма: $150,000+ инвестиции\nДоступность: Международный (любая страна)\nМесто реализации: Осло, Норвегия\nКлючевые требования: Технологии для океана\nСайт: https://www.katapult.co/ocean\nСтатус: Жёлтый",
+    "grant": {
+      "row_id": 14,
+      "name": "Katapult Ocean",
+      "type": "Акселератор",
+      "organization": "Katapult",
+      "field": "BlueTech, Ocean Tech",
+      "country": "Глобально",
+      "deadline": "2026-06-01",
+      "amount": "$150,000+ инвестиции",
+      "availability": "Международный (любая страна)",
+      "location": "Осло, Норвегия",
+      "requirements": "Технологии для океана",
+      "website": "https://www.katapult.co/ocean",
+      "status": "Жёлтый"
+    }
+  },
+  {
+    "row_id": 15,
+    "text": "Грант №15: AgFunder AgriTech Challenge\nТип: Конкурс\nОрганизация: AgFunder\nСфера: AgriTech, FoodTech\nСтрана: Глобально\nДедлайн: 2026-06-15\nСумма: $50,000\nДоступность: Международный (любая страна)\nМесто реализации: Онлайн\nКлючевые требования: Ранние стартапы в сельском хозяйстве\nСайт: https://agfunder.com/\nСтатус: Жёлтый",
+    "grant": {
+      "row_id": 15,
+      "name": "AgFunder AgriTech Challenge",
+      "type": "Конкурс",
+      "organization": "AgFunder",
+      "field": "AgriTech, FoodTech",
+      "country": "Глобально",
+      "deadline": "2026-06-15",
+      "amount": "$50,000",
+      "availability": "Международный (любая страна)",
+      "location": "Онлайн",
+      "requirements": "Ранние стартапы в сельском хозяйстве",
+      "website": "https://agfunder.com/",
+      "status": "Жёлтый"
+    }
+  },
+  {
+    "row_id": 16,
+    "text": "Грант №16: NTDP MVPLab\nТип: Государственная программа\nОрганизация: NTDP\nСфера: Deep-tech, IT\nСтрана: Саудовская Аравия\nДедлайн: Постоянно (rolling)\nСумма: 150,000 SAR (~$40,000)\nДоступность: Только для местных (гражданство или HQ в КСА)\nМесто реализации: Саудовская Аравия\nКлючевые требования: 0% equity, создание MVP\nСайт: https://www.ntdp.gov.sa/\nСтатус: Зелёный",
+    "grant": {
+      "row_id": 16,
+      "name": "NTDP MVPLab",
+      "type": "Государственная программа",
+      "organization": "NTDP",
+      "field": "Deep-tech, IT",
+      "country": "Саудовская Аравия",
+      "deadline": "Постоянно (rolling)",
+      "amount": "150,000 SAR (~$40,000)",
+      "availability": "Только для местных (гражданство или HQ в КСА)",
+      "location": "Саудовская Аравия",
+      "requirements": "0% equity, создание MVP",
+      "website": "https://www.ntdp.gov.sa/",
+      "status": "Зелёный"
+    }
+  },
+  {
+    "row_id": 17,
+    "text": "Грант №17: TikTok x Blossom Cohort 2\nТип: Акселератор\nОрганизация: TikTok + Blossom\nСфера: AI, креативные индустрии\nСтрана: Саудовская Аравия\nДедлайн: 2026 (набор открыт)\nСумма: $60,000\nДоступность: Только для местных (Сауд. Аравия / MENA)\nМесто реализации: Саудовская Аравия\nКлючевые требования: Стартапы из региона\nСайт: https://arabfounders.net/\nСтатус: Зелёный",
+    "grant": {
+      "row_id": 17,
+      "name": "TikTok x Blossom Cohort 2",
+      "type": "Акселератор",
+      "organization": "TikTok + Blossom",
+      "field": "AI, креативные индустрии",
+      "country": "Саудовская Аравия",
+      "deadline": "2026 (набор открыт)",
+      "amount": "$60,000",
+      "availability": "Только для местных (Сауд. Аравия / MENA)",
+      "location": "Саудовская Аравия",
+      "requirements": "Стартапы из региона",
+      "website": "https://arabfounders.net/",
+      "status": "Зелёный"
+    }
+  },
+  {
+    "row_id": 18,
+    "text": "Грант №18: KAUST Entrepreneurship Fund\nТип: R&D/Акселератор\nОрганизация: KAUST\nСфера: Deep-tech, энергетика, биотех\nСтрана: Саудовская Аравия\nДедлайн: Постоянно (rolling)\nСумма: Уточняется\nДоступность: Только для местных (регистрация в КСА)\nМесто реализации: Саудовская Аравия\nКлючевые требования: Технологические инновации\nСайт: https://entrepreneurship.kaust.edu.sa/\nСтатус: Зелёный",
+    "grant": {
+      "row_id": 18,
+      "name": "KAUST Entrepreneurship Fund",
+      "type": "R&D/Акселератор",
+      "organization": "KAUST",
+      "field": "Deep-tech, энергетика, биотех",
+      "country": "Саудовская Аравия",
+      "deadline": "Постоянно (rolling)",
+      "amount": "Уточняется",
+      "availability": "Только для местных (регистрация в КСА)",
+      "location": "Саудовская Аравия",
+      "requirements": "Технологические инновации",
+      "website": "https://entrepreneurship.kaust.edu.sa/",
+      "status": "Зелёный"
+    }
+  },
+  {
+    "row_id": 19,
+    "text": "Грант №19: KAUST TAQADAM\nТип: Акселератор\nОрганизация: KAUST\nСфера: Deep-tech: энергетика, биотех, IoT\nСтрана: Саудовская Аравия\nДедлайн: Осень 2026\nСумма: $25,000-$100,000\nДоступность: Только для местных (регистрация в КСА)\nМесто реализации: Thuwal, Сауд. Аравия\nКлючевые требования: Команда 2+ основателей\nСайт: https://entrepreneurship.kaust.edu.sa/\nСтатус: Серый (Плановый)",
+    "grant": {
+      "row_id": 19,
+      "name": "KAUST TAQADAM",
+      "type": "Акселератор",
+      "organization": "KAUST",
+      "field": "Deep-tech: энергетика, биотех, IoT",
+      "country": "Саудовская Аравия",
+      "deadline": "Осень 2026",
+      "amount": "$25,000-$100,000",
+      "availability": "Только для местных (регистрация в КСА)",
+      "location": "Thuwal, Сауд. Аравия",
+      "requirements": "Команда 2+ основателей",
+      "website": "https://entrepreneurship.kaust.edu.sa/",
+      "status": "Серый (Плановый)"
+    }
+  },
+  {
+    "row_id": 20,
+    "text": "Грант №20: Misk Accelerator (500 Global)\nТип: Акселератор\nОрганизация: Misk Foundation\nСфера: Технологические стартапы\nСтрана: Саудовская Аравия\nДедлайн: Осень 2026\nСумма: $100,000+\nДоступность: Только для местных (регистрация в КСА)\nМесто реализации: Эр-Рияд\nКлючевые требования: Пост-продукт, трекшен\nСайт: https://misk.org.sa/\nСтатус: Серый (Плановый)",
+    "grant": {
+      "row_id": 20,
+      "name": "Misk Accelerator (500 Global)",
+      "type": "Акселератор",
+      "organization": "Misk Foundation",
+      "field": "Технологические стартапы",
+      "country": "Саудовская Аравия",
+      "deadline": "Осень 2026",
+      "amount": "$100,000+",
+      "availability": "Только для местных (регистрация в КСА)",
+      "location": "Эр-Рияд",
+      "requirements": "Пост-продукт, трекшен",
+      "website": "https://misk.org.sa/",
+      "status": "Серый (Плановый)"
+    }
+  },
+  {
+    "row_id": 21,
+    "text": "Грант №21: GIST Startup Bootcamp\nТип: Акселератор\nОрганизация: GIST (Госдеп США)\nСфера: Deep-tech, AI, Biotech\nСтрана: Страны MENA, Азия, Африка\nДедлайн: 2026-09-01\nСумма: Обучение + менторство\nДоступность: Только для местных (развивающиеся страны)\nМесто реализации: Онлайн + демо-день (США)\nКлючевые требования: Стартапы из приоритетных стран\nСайт: https://www.gistnetwork.org/\nСтатус: Серый (Плановый)",
+    "grant": {
+      "row_id": 21,
+      "name": "GIST Startup Bootcamp",
+      "type": "Акселератор",
+      "organization": "GIST (Госдеп США)",
+      "field": "Deep-tech, AI, Biotech",
+      "country": "Страны MENA, Азия, Африка",
+      "deadline": "2026-09-01",
+      "amount": "Обучение + менторство",
+      "availability": "Только для местных (развивающиеся страны)",
+      "location": "Онлайн + демо-день (США)",
+      "requirements": "Стартапы из приоритетных стран",
+      "website": "https://www.gistnetwork.org/",
+      "status": "Серый (Плановый)"
+    }
+  },
+  {
+    "row_id": 22,
+    "text": "Грант №22: Google for Startups Cloud Program\nТип: Облачные кредиты\nОрганизация: Google\nСфера: IT, AI\nСтрана: Глобально\nДедлайн: Постоянно (rolling)\nСумма: $350,000 GCP кредитов\nДоступность: Международный (любая страна)\nМесто реализации: Глобально (облако)\nКлючевые требования: Регистрация юрлица\nСайт: https://startup.google.com/\nСтатус: Зелёный",
+    "grant": {
+      "row_id": 22,
+      "name": "Google for Startups Cloud Program",
+      "type": "Облачные кредиты",
+      "organization": "Google",
+      "field": "IT, AI",
+      "country": "Глобально",
+      "deadline": "Постоянно (rolling)",
+      "amount": "$350,000 GCP кредитов",
+      "availability": "Международный (любая страна)",
+      "location": "Глобально (облако)",
+      "requirements": "Регистрация юрлица",
+      "website": "https://startup.google.com/",
+      "status": "Зелёный"
+    }
+  },
+  {
+    "row_id": 23,
+    "text": "Грант №23: Microsoft for Startups Founders Hub\nТип: Облачные кредиты\nОрганизация: Microsoft\nСфера: IT, AI\nСтрана: Глобально\nДедлайн: Постоянно (rolling)\nСумма: $150,000 Azure кредитов\nДоступность: Международный (любая страна)\nМесто реализации: Глобально (облако)\nКлючевые требования: Регистрация юрлица\nСайт: https://microsoft.com/startups\nСтатус: Зелёный",
+    "grant": {
+      "row_id": 23,
+      "name": "Microsoft for Startups Founders Hub",
+      "type": "Облачные кредиты",
+      "organization": "Microsoft",
+      "field": "IT, AI",
+      "country": "Глобально",
+      "deadline": "Постоянно (rolling)",
+      "amount": "$150,000 Azure кредитов",
+      "availability": "Международный (любая страна)",
+      "location": "Глобально (облако)",
+      "requirements": "Регистрация юрлица",
+      "website": "https://microsoft.com/startups",
+      "status": "Зелёный"
+    }
+  },
+  {
+    "row_id": 24,
+    "text": "Грант №24: NVIDIA Inception Program\nТип: Облачные кредиты\nОрганизация: NVIDIA\nСфера: AI, ML\nСтрана: Глобально\nДедлайн: Постоянно (rolling)\nСумма: GPU кредиты + DGX доступ\nДоступность: Международный (любая страна)\nМесто реализации: Глобально (облако)\nКлючевые требования: Использование GPU\nСайт: https://nvidia.com/inception\nСтатус: Зелёный",
+    "grant": {
+      "row_id": 24,
+      "name": "NVIDIA Inception Program",
+      "type": "Облачные кредиты",
+      "organization": "NVIDIA",
+      "field": "AI, ML",
+      "country": "Глобально",
+      "deadline": "Постоянно (rolling)",
+      "amount": "GPU кредиты + DGX доступ",
+      "availability": "Международный (любая страна)",
+      "location": "Глобально (облако)",
+      "requirements": "Использование GPU",
+      "website": "https://nvidia.com/inception",
+      "status": "Зелёный"
+    }
+  },
+  {
+    "row_id": 25,
+    "text": "Грант №25: EIC Pathfinder Challenges 2026\nТип: R&D Grant\nОрганизация: EIC\nСфера: AI, новые материалы, биотех, квантовые, фотонические\nСтрана: Евросоюз\nДедлайн: 2026-10-28\nСумма: до €4 млн\nДоступность: Только для местных (EU+ассоциированные)\nМесто реализации: Страна-участник EU\nКлючевые требования: Междисциплинарные команды, TRL 1-4\nСайт: https://eic.ec.europa.eu/eic-pathfinder\nСтатус: Зелёный",
+    "grant": {
+      "row_id": 25,
+      "name": "EIC Pathfinder Challenges 2026",
+      "type": "R&D Grant",
+      "organization": "EIC",
+      "field": "AI, новые материалы, биотех, квантовые, фотонические",
+      "country": "Евросоюз",
+      "deadline": "2026-10-28",
+      "amount": "до €4 млн",
+      "availability": "Только для местных (EU+ассоциированные)",
+      "location": "Страна-участник EU",
+      "requirements": "Междисциплинарные команды, TRL 1-4",
+      "website": "https://eic.ec.europa.eu/eic-pathfinder",
+      "status": "Зелёный"
+    }
+  },
+  {
+    "row_id": 26,
+    "text": "Грант №26: EIC Transition 2026\nТип: R&D Grant\nОрганизация: EIC\nСфера: Коммерциализация исследований\nСтрана: Евросоюз\nДедлайн: 2026-09-16\nСумма: до €2.5 млн\nДоступность: Только для местных (EU+ассоциированные)\nМесто реализации: Страна-участник EU\nКлючевые требования: Валидация технологии, бизнес-план\nСайт: https://eic.ec.europa.eu/eic-transition\nСтатус: Зелёный",
+    "grant": {
+      "row_id": 26,
+      "name": "EIC Transition 2026",
+      "type": "R&D Grant",
+      "organization": "EIC",
+      "field": "Коммерциализация исследований",
+      "country": "Евросоюз",
+      "deadline": "2026-09-16",
+      "amount": "до €2.5 млн",
+      "availability": "Только для местных (EU+ассоциированные)",
+      "location": "Страна-участник EU",
+      "requirements": "Валидация технологии, бизнес-план",
+      "website": "https://eic.ec.europa.eu/eic-transition",
+      "status": "Зелёный"
+    }
+  },
+  {
+    "row_id": 27,
+    "text": "Грант №27: Advanced Innovation Challenges\nТип: R&D Grant\nОрганизация: EIC\nСфера: Прорывные инновации\nСтрана: Евросоюз\nДедлайн: 2026-02-26\nСумма: до €2.5 млн\nДоступность: Только для местных (EU+ассоциированные)\nМесто реализации: Страна-участник EU\nКлючевые требования: Пилотная программа\nСайт: https://eic.ec.europa.eu/advanced-challenges\nСтатус: Серый (Плановый)",
+    "grant": {
+      "row_id": 27,
+      "name": "Advanced Innovation Challenges",
+      "type": "R&D Grant",
+      "organization": "EIC",
+      "field": "Прорывные инновации",
+      "country": "Евросоюз",
+      "deadline": "2026-02-26",
+      "amount": "до €2.5 млн",
+      "availability": "Только для местных (EU+ассоциированные)",
+      "location": "Страна-участник EU",
+      "requirements": "Пилотная программа",
+      "website": "https://eic.ec.europa.eu/advanced-challenges",
+      "status": "Серый (Плановый)"
+    }
+  },
+  {
+    "row_id": 28,
+    "text": "Грант №28: EIC STEP Scale Up\nТип: Инвестиции\nОрганизация: EIC\nСфера: Deep-tech, масштабирование\nСтрана: Евросоюз\nДедлайн: 2026-05-06\nСумма: €10-30 млн\nДоступность: Только для местных (EU+ассоциированные)\nМесто реализации: Страна-участник EU\nКлючевые требования: Высокий потенциал роста\nСайт: https://eic.ec.europa.eu/step-scale-up\nСтатус: Красный (СРОЧНО)",
+    "grant": {
+      "row_id": 28,
+      "name": "EIC STEP Scale Up",
+      "type": "Инвестиции",
+      "organization": "EIC",
+      "field": "Deep-tech, масштабирование",
+      "country": "Евросоюз",
+      "deadline": "2026-05-06",
+      "amount": "€10-30 млн",
+      "availability": "Только для местных (EU+ассоциированные)",
+      "location": "Страна-участник EU",
+      "requirements": "Высокий потенциал роста",
+      "website": "https://eic.ec.europa.eu/step-scale-up",
+      "status": "Красный (СРОЧНО)"
+    }
+  },
+  {
+    "row_id": 29,
+    "text": "Грант №29: GitHub Accelerator\nТип: Акселератор\nОрганизация: GitHub\nСфера: Open source проекты\nСтрана: Глобально\nДедлайн: 2026-02-17\nСумма: $40,000\nДоступность: Международный (любая страна)\nМесто реализации: Онлайн\nКлючевые требования: Open source с потенциалом роста\nСайт: https://accelerator.github.com/\nСтатус: Серый (Плановый)",
+    "grant": {
+      "row_id": 29,
+      "name": "GitHub Accelerator",
+      "type": "Акселератор",
+      "organization": "GitHub",
+      "field": "Open source проекты",
+      "country": "Глобально",
+      "deadline": "2026-02-17",
+      "amount": "$40,000",
+      "availability": "Международный (любая страна)",
+      "location": "Онлайн",
+      "requirements": "Open source с потенциалом роста",
+      "website": "https://accelerator.github.com/",
+      "status": "Серый (Плановый)"
+    }
+  },
+  {
+    "row_id": 30,
+    "text": "Грант №30: Google for Startups Accelerator\nТип: Акселератор\nОрганизация: Google\nСфера: AI/ML технологии\nСтрана: Глобально\nДедлайн: 2026-04-28\nСумма: $350,000 GCP кредитов\nДоступность: Международный (любая страна)\nМесто реализации: Онлайн\nКлючевые требования: 10-недельная программа\nСайт: https://startup.google.com/\nСтатус: Серый (Плановый)",
+    "grant": {
+      "row_id": 30,
+      "name": "Google for Startups Accelerator",
+      "type": "Акселератор",
+      "organization": "Google",
+      "field": "AI/ML технологии",
+      "country": "Глобально",
+      "deadline": "2026-04-28",
+      "amount": "$350,000 GCP кредитов",
+      "availability": "Международный (любая страна)",
+      "location": "Онлайн",
+      "requirements": "10-недельная программа",
+      "website": "https://startup.google.com/",
+      "status": "Серый (Плановый)"
+    }
+  },
+  {
+    "row_id": 31,
+    "text": "Грант №31: DeepScience Accelerator\nТип: Акселератор\nОрганизация: DeepScience\nСфера: AI для энергетики, биотеха\nСтрана: США/Глобально\nДедлайн: 2026-05-08\nСумма: $100,000 + AWS\nДоступность: Международный (любая страна)\nМесто реализации: Онлайн + демо-день\nКлючевые требования: AI-решения для глобальных вызовов\nСайт: https://www.deepscience.ai/\nСтатус: Красный (СРОЧНО)",
+    "grant": {
+      "row_id": 31,
+      "name": "DeepScience Accelerator",
+      "type": "Акселератор",
+      "organization": "DeepScience",
+      "field": "AI для энергетики, биотеха",
+      "country": "США/Глобально",
+      "deadline": "2026-05-08",
+      "amount": "$100,000 + AWS",
+      "availability": "Международный (любая страна)",
+      "location": "Онлайн + демо-день",
+      "requirements": "AI-решения для глобальных вызовов",
+      "website": "https://www.deepscience.ai/",
+      "status": "Красный (СРОЧНО)"
+    }
+  },
+  {
+    "row_id": 32,
+    "text": "Грант №32: WHO Innovation Challenge\nТип: Конкурс\nОрганизация: WHO\nСфера: Цифровые решения для психического здоровья\nСтрана: Глобально\nДедлайн: 2026-04-04\nСумма: $20,000\nДоступность: Международный (любая страна)\nМесто реализации: Онлайн\nКлючевые требования: Для стартапов и исследователей\nСайт: https://www.who.int/innovation\nСтатус: Серый (Плановый)",
+    "grant": {
+      "row_id": 32,
+      "name": "WHO Innovation Challenge",
+      "type": "Конкурс",
+      "organization": "WHO",
+      "field": "Цифровые решения для психического здоровья",
+      "country": "Глобально",
+      "deadline": "2026-04-04",
+      "amount": "$20,000",
+      "availability": "Международный (любая страна)",
+      "location": "Онлайн",
+      "requirements": "Для стартапов и исследователей",
+      "website": "https://www.who.int/innovation",
+      "status": "Серый (Плановый)"
+    }
+  },
+  {
+    "row_id": 33,
+    "text": "Грант №33: WFP Innovation Accelerator\nТип: Акселератор\nОрганизация: WFP (ООН)\nСфера: Решения для борьбы с голодом\nСтрана: Глобально\nДедлайн: 2026-01-31\nСумма: $100,000\nДоступность: Международный (любая страна)\nМесто реализации: Онлайн\nКлючевые требования: Стартапы в продовольственной безопасности\nСайт: https://innovation.wfp.org/\nСтатус: Серый (Плановый)",
+    "grant": {
+      "row_id": 33,
+      "name": "WFP Innovation Accelerator",
+      "type": "Акселератор",
+      "organization": "WFP (ООН)",
+      "field": "Решения для борьбы с голодом",
+      "country": "Глобально",
+      "deadline": "2026-01-31",
+      "amount": "$100,000",
+      "availability": "Международный (любая страна)",
+      "location": "Онлайн",
+      "requirements": "Стартапы в продовольственной безопасности",
+      "website": "https://innovation.wfp.org/",
+      "status": "Серый (Плановый)"
+    }
+  },
+  {
+    "row_id": 34,
+    "text": "Грант №34: IKEA Social Entrepreneurship\nТип: Акселератор\nОрганизация: IKEA\nСфера: Социальное воздействие, климат\nСтрана: Глобально\nДедлайн: 2026-03-31\nСумма: 50000\nДоступность: Международный (любая страна)\nМесто реализации: Онлайн\nКлючевые требования: Стартапы с социальной миссией\nСайт: https://ikea.se/en/people-planet\nСтатус: Серый (Плановый)",
+    "grant": {
+      "row_id": 34,
+      "name": "IKEA Social Entrepreneurship",
+      "type": "Акселератор",
+      "organization": "IKEA",
+      "field": "Социальное воздействие, климат",
+      "country": "Глобально",
+      "deadline": "2026-03-31",
+      "amount": "50000",
+      "availability": "Международный (любая страна)",
+      "location": "Онлайн",
+      "requirements": "Стартапы с социальной миссией",
+      "website": "https://ikea.se/en/people-planet",
+      "status": "Серый (Плановый)"
+    }
+  },
+  {
+    "row_id": 35,
+    "text": "Грант №35: Heads of Mission Innovation\nТип: Грант\nОрганизация: Gates Foundation\nСфера: Agritech, Healthtech\nСтрана: США\nДедлайн: 2026-03-11\nСумма: $100,000\nДоступность: Международный (любая страна)\nМесто реализации: США\nКлючевые требования: Сельское хозяйство и здравоохранение\nСайт: https://www.gatesfoundation.org/\nСтатус: Серый (Плановый)",
+    "grant": {
+      "row_id": 35,
+      "name": "Heads of Mission Innovation",
+      "type": "Грант",
+      "organization": "Gates Foundation",
+      "field": "Agritech, Healthtech",
+      "country": "США",
+      "deadline": "2026-03-11",
+      "amount": "$100,000",
+      "availability": "Международный (любая страна)",
+      "location": "США",
+      "requirements": "Сельское хозяйство и здравоохранение",
+      "website": "https://www.gatesfoundation.org/",
+      "status": "Серый (Плановый)"
+    }
+  },
+  {
+    "row_id": 36,
+    "text": "Грант №36: MatterScale Accelerator\nТип: Акселератор\nОрганизация: Matter Health\nСфера: Healthtech\nСтрана: США (Чикаго)\nДедлайн: 2026-06-10\nСумма: $50,000\nДоступность: Только для местных (США)\nМесто реализации: Чикаго, США\nКлючевые требования: MVP в healthtech\nСайт: https://matter.health/programs\nСтатус: Жёлтый",
+    "grant": {
+      "row_id": 36,
+      "name": "MatterScale Accelerator",
+      "type": "Акселератор",
+      "organization": "Matter Health",
+      "field": "Healthtech",
+      "country": "США (Чикаго)",
+      "deadline": "2026-06-10",
+      "amount": "$50,000",
+      "availability": "Только для местных (США)",
+      "location": "Чикаго, США",
+      "requirements": "MVP в healthtech",
+      "website": "https://matter.health/programs",
+      "status": "Жёлтый"
+    }
+  },
+  {
+    "row_id": 37,
+    "text": "Грант №37: Innovation Fund Denmark\nТип: R&D Grant\nОрганизация: Innovation Fund Denmark\nСфера: Инновационные проекты\nСтрана: Дания\nДедлайн: 2026-03-03\nСумма: до €1 млн\nДоступность: Только для местных (Дания)\nМесто реализации: Дания\nКлючевые требования: Датские стартапы и исследователи\nСайт: https://innovationsfonden.dk/\nСтатус: Серый (Плановый)",
+    "grant": {
+      "row_id": 37,
+      "name": "Innovation Fund Denmark",
+      "type": "R&D Grant",
+      "organization": "Innovation Fund Denmark",
+      "field": "Инновационные проекты",
+      "country": "Дания",
+      "deadline": "2026-03-03",
+      "amount": "до €1 млн",
+      "availability": "Только для местных (Дания)",
+      "location": "Дания",
+      "requirements": "Датские стартапы и исследователи",
+      "website": "https://innovationsfonden.dk/",
+      "status": "Серый (Плановый)"
+    }
+  },
+  {
+    "row_id": 38,
+    "text": "Грант №38: StartupYard\nТип: Акселератор\nОрганизация: StartupYard\nСфера: B2B стартапы\nСтрана: Чехия/ЕС\nДедлайн: 2026-04-12\nСумма: до €300,000\nДоступность: Только для местных (ЕС)\nМесто реализации: Чехия\nКлючевые требования: Команда, рынок, технология\nСайт: https://startupyard.com/\nСтатус: Серый (Плановый)",
+    "grant": {
+      "row_id": 38,
+      "name": "StartupYard",
+      "type": "Акселератор",
+      "organization": "StartupYard",
+      "field": "B2B стартапы",
+      "country": "Чехия/ЕС",
+      "deadline": "2026-04-12",
+      "amount": "до €300,000",
+      "availability": "Только для местных (ЕС)",
+      "location": "Чехия",
+      "requirements": "Команда, рынок, технология",
+      "website": "https://startupyard.com/",
+      "status": "Серый (Плановый)"
+    }
+  },
+  {
+    "row_id": 39,
+    "text": "Грант №39: German Accelerator\nТип: Акселератор\nОрганизация: German Accelerator\nСфера: Tech-стартапы DACH\nСтрана: Германия/США\nДедлайн: 2026-01-04\nСумма: Менторство\nДоступность: Только для местных (Германия)\nМесто реализации: США\nКлючевые требования: Масштабирование на рынок США\nСайт: https://www.germanaccelerator.com/\nСтатус: Серый (Плановый)",
+    "grant": {
+      "row_id": 39,
+      "name": "German Accelerator",
+      "type": "Акселератор",
+      "organization": "German Accelerator",
+      "field": "Tech-стартапы DACH",
+      "country": "Германия/США",
+      "deadline": "2026-01-04",
+      "amount": "Менторство",
+      "availability": "Только для местных (Германия)",
+      "location": "США",
+      "requirements": "Масштабирование на рынок США",
+      "website": "https://www.germanaccelerator.com/",
+      "status": "Серый (Плановый)"
+    }
+  },
+  {
+    "row_id": 40,
+    "text": "Грант №40: INNOVATE (Enterprise Singapore)\nТип: Инвестиции\nОрганизация: Enterprise Singapore\nСфера: Deep-tech стартапы\nСтрана: Сингапур\nДедлайн: 2025-11-17\nСумма: до SGD 500,000\nДоступность: Только для местных (Сингапур)\nМесто реализации: Сингапур\nКлючевые требования: Co-investment схема\nСайт: https://www.enterprisesg.gov.sg/\nСтатус: Серый (Плановый)",
+    "grant": {
+      "row_id": 40,
+      "name": "INNOVATE (Enterprise Singapore)",
+      "type": "Инвестиции",
+      "organization": "Enterprise Singapore",
+      "field": "Deep-tech стартапы",
+      "country": "Сингапур",
+      "deadline": "2025-11-17",
+      "amount": "до SGD 500,000",
+      "availability": "Только для местных (Сингапур)",
+      "location": "Сингапур",
+      "requirements": "Co-investment схема",
+      "website": "https://www.enterprisesg.gov.sg/",
+      "status": "Серый (Плановый)"
+    }
+  }
+]
